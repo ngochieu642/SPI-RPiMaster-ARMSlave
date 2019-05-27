@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"arm_f4_slave_2spi\startup_stm32f407xx.o"
+"arm_f4_slave_2spi\main.o"
+"arm_f4_slave_2spi\stm32f4xx_it.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_msp.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_spi.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_tim.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_tim_ex.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_rcc.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_rcc_ex.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_flash.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_flash_ex.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_flash_ramfunc.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_gpio.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_dma_ex.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_dma.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_pwr.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_pwr_ex.o"
+"arm_f4_slave_2spi\stm32f4xx_hal_cortex.o"
+"arm_f4_slave_2spi\stm32f4xx_hal.o"
+"arm_f4_slave_2spi\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "ARM_F4_slave_2SPI\ARM_F4_slave_2SPI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ARM_F4_slave_2SPI.map" -o ARM_F4_slave_2SPI\ARM_F4_slave_2SPI.axf

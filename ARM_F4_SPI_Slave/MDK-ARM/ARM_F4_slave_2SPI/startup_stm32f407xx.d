@@ -1,0 +1,1 @@
+arm_f4_slave_2spi\startup_stm32f407xx.o: startup_stm32f407xx.s
